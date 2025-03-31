@@ -14,7 +14,7 @@ export default function Hub() {
     useEffect(() => {
         const connectSignalR = async () => {
             const conn = new signalR.HubConnectionBuilder()
-                .withUrl("http://localhost:5019/mouse") // URL do backend
+                .withUrl("testemouse-production.up.railway.app/mouse") // URL do backend
                 .withAutomaticReconnect()
                 .build();
 
