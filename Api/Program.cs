@@ -6,7 +6,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAll",
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000")
+            policy.WithOrigins("https://romantic-spontaneity-production.up.railway.app")
                   .AllowAnyMethod()
                   .AllowAnyHeader()
                   .AllowCredentials();
