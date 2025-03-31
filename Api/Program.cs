@@ -18,6 +18,7 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+app.MapGet("/", () => "API está rodando!");
 app.MapHub<MouseHub>("/mouse");
 app.Run();
 
